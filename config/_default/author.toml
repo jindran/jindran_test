@@ -1,0 +1,23 @@
+name = "Jindra Navrátil"
+# avatar = "images/profile.png" # Avatar image. Default to "images/profile.webp".
+avatar = "images/JiNA.png"
+#bio = "Gopher, PHPer, Full Stack Engineer."
+bio = "Fotograf amatér, IT analytik, Raspberry fanda"
+#company = 'Company'
+company = '<a href="https://www.komix.cz" target="_blank" rel="noopener noreferrer">Komix</a>'
+#location = "Earth"
+location = "Czech Republic"
+# alternatives:
+# location = "<a href='https://www.openstreetmap.org/search?query=Earth'>Earth</a>"
+# location = "<a href='https://www.google.com/maps/search/Earth'>Earth</a>"
+# about = "https://domain.tld" # The external about page. The internal about page will be used if not set.
+
+[params]
+  #layout = "compact"
+
+[social]
+  email = "jindrich.navratil@post.cz"
+  facebook = "jindrich.navratil.520"
+#  github = "yourgithubusername"
+#  twitter = "yourtwitterusername"
+  linkedin = "in/jindřich-navrátil-b77a717"
