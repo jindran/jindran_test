@@ -1,5 +1,5 @@
 +++
-title = "Custom Assets"
+title = "Přizpůsobení"
 date = 2021-11-28T16:00:49+08:00
 featured = true
 comment = true
@@ -21,19 +21,20 @@ images = []
   weight = 6
 +++
 
-As a customizable theme, it provides the ability to customize assets, whether it is customizing CSS and JS or introducing third-party CSS and JS.
+Přizpůsobitelné témata poskytují možnost přizpůsobit chování, ať už jde o přizpůsobení stlů pomocí CSS a JS, nebo zavedení CSS a JS třetích stran.
 
 <!--more-->
 
 ## Internal Assets
 
-Just create and edit the files `assets/css/custom.css` and `assets/js/custom.js`.
+Stačí vytvořit a upravit soubory `assets/css/custom.css` a `assets/js/custom.js`.
 
-> These files will be bundled into one for reducing HTTP requests.
+> Tyto soubory budou sloučeny do jednoho pro zmenšení požadavků HTTP.
 
 ## External Assets
 
-Any external CSS and JS resources can be imported by the `customCSS` and `customJS` parameters.
+Jakékoli externí zdroje CSS a JS lze importovat pomocí parametrů `customCSS` a `customJS`.
+
 
 ```toml
 customCSS = [

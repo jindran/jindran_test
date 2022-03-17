@@ -24,17 +24,16 @@ images = []
   weight = 3
   pre = '<i class="fas fa-fw fa-palette"></i>'
 +++
-
-By default, a site using this theme has the default fonts, colors, and general look and feel.
-However, the default scheme cannot satisfy everyone, but don't worry, you can easily override the theme defaults, such as palette colors, fonts, syntax highlighting.
+Ve výchozím nastavení používá web výchozí font, barvy a vzhled.
+Ačkoliv výchozí vzhled neuspokojí všechny, neobávejte se, můžete snadno změnit výchozí vzhled, jako jsou barvy, fonty, zvýraznění syntaxe.
 
 <!--more-->
 
 ## Palettes
 
-The theme palettes system is based on CSS variable, therefore, we can easily custom the color per palette.
+Systém vzhledů motivů je založen na proměnných CSS, proto můžeme snadno přizpůsobit barvu na paletu.
 
-Let's illustrate with an example.
+Ukažme si to na příkladu.
 
 ```CSS
 [data-palette=blue] {
@@ -43,17 +42,18 @@ Let's illustrate with an example.
 }
 ```
 
-After appending the style to `assets/css/custom.css`, the color of `blue` palette will be changed to `darkblue`.
+Po připojení stylu k "assets/css/custom.css" se barva "modré" palety změní na "tmavě modrou".
 
 ## Fonts
 
 ### Font Family
 
-We don't specify any font, so that `system-ui` will be used in most browsers.
+Nepřednastavujeme žádné písmo, takže ve většině prohlížečů bude použito "system-ui".
 
-You can use other web fonts easilly, such as [Google Fonts](https://fonts.google.com/). Lets take the Roboto font as an exmaple.
+Můžete snadno používat fonty, například [Písma Google](https://fonts.google.com/). Vezměme písmo Roboto jako příklad.
 
-First of all, we import the font by `customCSS`:
+Nejprve importujeme písmo pomocí `customCSS`:
+
 
 ```
 customCSS = [
@@ -61,7 +61,7 @@ customCSS = [
 ]
 ```
 
-And then override the `--hbs-body-font-family` variable in `assets/css/custom.css`:
+A pak přepište proměnnou `--hbs-body-font-family` v `assets/css/custom.css`:
 
 ```CSS
 :root {
@@ -69,15 +69,15 @@ And then override the `--hbs-body-font-family` variable in `assets/css/custom.cs
 }
 ```
 
-## Syntax Highlighting
+## Zvýraznění syntaxe
 
-The theme requires the following markup parameters to be set to specific values.
+Motiv vyžaduje, aby následující parametry značek byly nastaveny na konkrétní hodnoty.
 
 - `lineNos`: `true`
 - `lineNumbersInTable`: `false`
 - `noClasses`: `false`
 
-See also [Configure Highlight](https://gohugo.io/getting-started/configuration-markup#highlight).
+Viz také [Configure Highlight](https://gohugo.io/getting-started/configuration-markup#highlight).
 
 ### Style
 
@@ -85,24 +85,24 @@ See also [Configure Highlight](https://gohugo.io/getting-started/configuration-m
 $ hugo gen chromastyles --style=solarized-dark > assets/css/highlight.css
 ```
 
-See also [All Supported Styles](https://xyproto.github.io/splash/docs/all.html).
+Viz také [All Supported Styles](https://xyproto.github.io/splash/docs/all.html).
 
 ## Icons
 
-We're using a custom [Font Awesome](https://fontawesome.com/) icon set, in order to reduce the file size of icons.
-Because of this, you are free to choose other icons.
+Používáme vlastní sadu ikon [Font Awesome] (https://fontawesome.com/), abychom zmenšili velikost souboru ikon.
+Z tohoto důvodu si můžete vybrat další ikony.
 
 ### Font Awesome
 
 #### Custom Build
 
-> This section contains front-end technologies, such as `JavaScript` and `npm`.
+>Tato sekce obsahuje front-end technologie, jako je `JavaScript` a `npm`.
+ 
+Poskytli jsme soubor s názvem "assets / js / icons.js" pro přizpůsobení ikon, proto můžete podle potřeby přidat ikony.
+Prostředí e build jsme pro vás již nastavili v ukázkovém webu.
 
-We provided a file called `assets/js/icons.js` for customizing icons, therefore, you can add icons as needed.
-We already set up e build environment in the example site for you.
-
-1. Install Dependencies
-
+1. Instalace závislostí
+ 
 ```shell
 $ npm install
 ```
@@ -121,11 +121,11 @@ library.add(faGlobe, faClock);
 $ npm run build
 ```
 
-It's a recommended way to add icons if you're familiar to front-end development.
+Je to doporučený způsob, jak přidat ikony, pokud jste obeznámeni s vývojem front-endu.
 
 #### CustomJS
 
-Since the theme using JS+SVG framework to replace icons to SVG, so the `customCSS` won't work, you need to use `customJS` instead. 
+Vzhledem k tomu, že motiv používá rámec JS + SVG k nahrazení ikon do SVG, takže `customCSS` nebude fungovat, musíte místo toho použít `customJS`.
 
 ```toml
 customJS = [
@@ -138,7 +138,7 @@ customJS = [
 
 ### Others
 
-The other icons can be imported by `customCSS`, `customJS` or [Hooks]({{< ref "/posts/hooks" >}}).
+Ostatní ikony lze importovat pomocí `customCSS`, `customJS` nebo [Hooks]({{< ref "/posts/hooks" >}}).
 
 - [Iconify](https://iconify.design/)
 - [Bootstrap Icons](https://icons.getbootstrap.com/)

@@ -1,5 +1,5 @@
 +++
-title = "Archives"
+title = "Archivní zprávy"
 layout = "archive"
 [menu.main]
   weight = 10

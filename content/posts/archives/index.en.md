@@ -21,13 +21,13 @@ images = []
   pre = '<i class="fas fa-fw fa-file-archive"></i>'
 +++
 
-Archiv je kolekce příspěvků seskupených po rocích.
+The archive page is a collection of posts grouped by year.
 
 <!--more-->
 
 ## Prerequisites
 
-Je třeba vytvořit stránku `archives/_index.md` ve složce `content`.
+We need to create a page called `archives/_index.md` in the `content` directory.
 
 ```toml
 +++

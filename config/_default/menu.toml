@@ -1,22 +1,22 @@
 [[main]]
-  name = "Support"
+  name = "Podpora"
   identifier = "support"
   weight = 40
   pre = '<i class="fas fa-fw fa-chevron-circle-down"></i>'
 [[main]]
-  name = "Repository"
+  name = "Repositář"
   identifier = "repository"
   parent = "support"
   url = "https://github.com/razonyang/hugo-theme-bootstrap"
   weight = 1
 [[main]]
-  name = "Discussions"
+  name = "Diskuze"
   identifier = "discussions"
   parent = "support"
   url = "https://github.com/razonyang/hugo-theme-bootstrap/discussions/new"
   weight = 2
 [[main]]
-  name = "Features Request"
+  name = "Zlepšení vlastností"
   identifier = "feature-request"
   parent = "support"
   url = "https://github.com/razonyang/hugo-theme-bootstrap/issues/new?template=feature_request.md"
@@ -28,43 +28,43 @@
     divider = true
 
 [[footer]]
-  name = "Support"
+  name = "Podpora"
   identifier = "support"
   weight = 1
 [[footer]]
-  name = "Repository"
+  name = "Repositář"
   identifier = "repository"
   parent = "support"
   url = "https://github.com/razonyang/hugo-theme-bootstrap"
   weight = 1
   pre = '<i class="fab fa-fw fa-github"></i>'
 [[footer]]
-  name = "Discussions"
+  name = "Diskuze"
   identifier = "discussions"
   parent = "support"
   url = "https://github.com/razonyang/hugo-theme-bootstrap/discussions/new"
   weight = 2
   pre = '<i class="fas fa-fw fa-comments"></i>'
 [[footer]]
-  name = "Features Request"
+  name = "Zlepšení vlastností"
   identifier = "feature-request"
   parent = "support"
   url = "https://github.com/razonyang/hugo-theme-bootstrap/issues/new?template=feature_request.md"
   weight = 3
 [[footer]]
-  name = "Bug Report"
+  name = "Hlášení chyb"
   identifier = "bug-report"
   parent = "support"
   url = "https://github.com/razonyang/hugo-theme-bootstrap/issues/new?template=bug_report.md"
   weight = 4
 
 [[footer]]
-  name = "Docs"
+  name = "Dokumentace"
   identifier = "docs"
   weight = 2
 
 [[footer]]
-  name = "Features"
+  name = "Vlastnosti"
   identifier = "features"
   weight = 3
 

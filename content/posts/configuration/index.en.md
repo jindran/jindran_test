@@ -1,5 +1,5 @@
 +++
-title = "Konfigurace přehledně"
+title = "Configuration Overview"
 date = 2021-11-27T19:53:24+08:00
 featured = true
 comment = true
@@ -20,14 +20,13 @@ images = []
   weight = 2
 +++
 
-
-Jak ukazuje příklad webu, používáme [Configuration Directory] (https://gohugo.io/getting-started/configuration/#configuration-directory) pro udržení snadnějšího nastavení specifického pro organizaci a prostředí, což je užitečné na vícejazyčných webech.
+As the example site shown, we use [Configuration Directory](https://gohugo.io/getting-started/configuration/#configuration-directory) to maintain easier organization and environment specific settings, it is especially useful on multilingual sites.
 
 <!--more-->
 
 ## Site Configuration
 
->Konfigurece webu je umístěna ve výchozím stavu zde `config/_default/config.toml`.
+> The site configuration is located in `config/_default/config.toml` by default.
 
 | Name | Type | Default | Description
 |---|:-:|:-:|---
@@ -48,7 +47,7 @@ See also [All Configuration Settings](https://gohugo.io/getting-started/configur
 
 ## Site Parameters
 
-> Prametry webu jsou ve výchozím stavu zde `config/_default/params.toml`.
+> The site parameters are located in `config/_default/params.toml` by default.
 
 | Name | Type | Default | Description
 |---|:-:|:-:|---
@@ -134,11 +133,11 @@ See also [All Configuration Settings](https://gohugo.io/getting-started/configur
 | `pinnedPost` | Boolean | `true` | Turn on/off pinned posts.
 | `pinnedPostCount` | Integer | `1` | The number of pinned posts.
 
->S výjimkou nástroje pro webmastery Google nemohou ostatní nástroje pro webmastery pracovat s "hugo --minify", protože nemohou rozpoznat minimalizovanou metaznačku. 
+> Except the Google webmaster tool, the other webmaster tools cannot work with `hugo --minify`, because they cannot recognize the minified meta tag.
 
 ## Page Parameters
 
-> Parametry stránky jsou umístěny v [Front Matter](https://gohugo.io/content-management/front-matter/).
+> Page parameters are located in page's [Front Matter](https://gohugo.io/content-management/front-matter/).
 
 | Name | Type  | Default | Description
 |---|:-:|:-:|---

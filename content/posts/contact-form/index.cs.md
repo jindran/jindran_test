@@ -1,6 +1,6 @@
 +++
-title = "Contact Form"
-date = 2021-11-30T23:56:00+08:00
+title = "Kontaktní formulář"
+date = 2022-03-04T23:56:00+08:00
 featured = false
 comment = true
 toc = true
@@ -22,23 +22,24 @@ images = []
   pre = '<i class="fas fa-fw fa-question-circle"></i>'
 +++
 
-We can put our email address on [social links]({{< ref "/posts/widgets/social-links" >}}) so that readers can contact us. Unfortunately, emails will be more or less treated as spam and even filtered.
-Therefore, we bring a feature called contact form. 
+Můžeme uvést naši e-mailovou adresu [social links]({{< ref "/posts/widgets/social-links" >}}) aby nás čtenáři mohli kontaktovat. Bohužel, e-maily budou víceméně považovány za spam a dokonce i filtrovány.
+Proto přinášíme funkci zvanou kontaktní formulář.
 
 <!--more-->
 
 ## Prerequisites
 
-We need to create a contact page called `contact/index.md` in the `content` directory, so that we can access the contact form.
+Potřebujeme vytvořit kontaktní stránku s názvem `contact/index.md` v adresáři `content`, abychom měli přístup k kontaktnímu formuláři.
 
 ```toml
 +++
-title = "Contact Us"
+title = "Kontaktujte nás"
 layout = "contact"
 +++
 ```
 
-Once created, the link will appear in the profile widget.
+Po vytvoření se odkaz objeví ve widgetu profilu.
+
 
 ## Parameters
 
@@ -51,19 +52,21 @@ Once created, the link will appear in the profile widget.
 
 ## Backends
 
-It is designed to be compatible with most backends, such as [Netlify form](https://docs.netlify.com/forms/setup), [Getform](https://getform.io/) and [Formspree](https://formspree.io/).
+Je navržen tak, aby byl kompatibilní s většinou backendů, jako je [Netlify form](https://docs.netlify.com/forms/setup), [Getform](https://getform.io/) a [Formspree]( https://formspree.io/).
 
 ### Netlify
 
-[Netlify form](https://docs.netlify.com/forms/setup) are supported out of box, therefore, you don't need to specify the `contact.endpoint` parameter.
+[Netlify form](https://docs.netlify.com/forms/setup) jsou podporovány již po instalaci, proto nemusíte zadávat parametr `contact.endpoint`.
 
-> The demo site uses Getform instead of Netlify form, because the Netlify will upgrade your form level automatically if you exceed the limit of current plan, which will lead to additional expenses.
+> Demo stránka používá Getform místo formuláře Netlify, protože Netlify automaticky upgraduje vaši úroveň formuláře, pokud překročíte limit aktuálního plánu, což povede k dalším výdajům.
 
-> Please make sure the `contact.endpoint` parameter is empty if you intend to use Netlify form.
+> Pokud chcete použít formulář Netlify, ujistěte se, že je parametr `contact.endpoint` prázdný.
+
 
 ### Others
 
-Let's take [Getform](https://getform.io) as an example:
+Vezměme si [Getform](https://getform.io) jako příklad:
+
 
 ```toml
 [contact]
