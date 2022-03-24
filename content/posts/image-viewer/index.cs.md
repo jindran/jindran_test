@@ -19,21 +19,20 @@ images = []
   weight = 3
 +++
 
-Image viewer is an image gallery, it will be shown up when you click a non-linkable image.
+Prohlížeč obrázků je galerie obrázků, zobrazí se, když kliknete na obrázek, na který nelze odkazovat.
 
-It also provides many tools, such as zoom in, zoom out and rotate.
+Poskytuje také mnoho nástrojů, jako je přiblížení, oddálení a otočení.
 
 <!--more-->
 
-> The author avatar was filtered by default.
+> Avatar autora byl ve výchozím nastavení filtrován.
 
 ## Site Parameters
 
-Image Viewer was turned on by default, you can turn it off by setting the parameter `viewer` as `false`.
-
+Prohlížeč obrázků byl ve výchozím nastavení zapnutý, můžete jej vypnout nastavením parametru `viewer` na `false`.
 ## Options
 
-You can tweak the options by creating `assets/js/viewer.config.js`.
+Možnosti můžete vyladit vytvořením `assets/js/viewer.config.js`.
 
 ```js
 window.viewerOptions = {
@@ -42,4 +41,4 @@ window.viewerOptions = {
 };
 ```
 
-Avialable options are listed on [Viewer.js Options](https://github.com/fengyuanchen/viewerjs#options).
+Dostupné možnosti jsou uvedeny v [Možnosti Viewer.js] (https://github.com/fengyuanchen/viewerjs#options).

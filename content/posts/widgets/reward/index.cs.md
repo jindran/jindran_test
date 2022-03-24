@@ -21,22 +21,22 @@ images = []
   pre = '<i class="fas fa-fw fa-coffee"></i>'
 +++
 
-The reward widget, AKA buy me a coffee widget, gives the readers a way to support a creator through the use of donations or tips.
+Widget odměny, AKA kupte si mi kávu widget, poskytuje čtenářům způsob, jak podpořit tvůrce pomocí darů nebo tipů.
 
 <!--more-->
 
-## Site Parameters
+## Parametry webu
 
-The `reward` is a key value pair that mapping from platform to their QR Code image, therefore, any platform that supports QR code is supported.
+`Odměna` je pár klíčových hodnot, který mapuje z platformy na jejich obrázek QR kódu, a proto je podporována jakákoli platforma, která podporuje kód QR.
 
 | Name | Type | Default | Description
 |---|:-:|:-:|---
 | `reward` | Object | - | 
-| `reward.alipay` | String | - | Alipay QR Code Image.
-| `reward.wechat` | String | - | Wechat QR Code Image.
+| `reward.alipay` | String | - | Obrázek QR kódu Alipay.
+| `reward.wechat` | String | - | Obrázek QR kódu Wechat.
 
-## Page Parameter
+## Parametr stránky
 
 | Name | Type | Default | Description
 |---|:-:|:-:|---
-| `reward` | Boolean | `true` | Turn on/off reward widget.
+| `reward` | Boolean | `true` | Zapnutí/vypnutí widgetu odměny.

@@ -19,15 +19,15 @@ images = []
   weight = 6
 +++
 
-As a flexible theme, it should have the ability to customize code and integrate third-party services. Therefore, we brought a feature called hook.
+Jako flexibilní téma by mělo mít možnost upravit kód a integrovat služby třetích stran. Proto jsme přinesli funkci zvanou hook.
 
-In this article, we will introduce all hooks and provide some use cases.
+V tomto článku si představíme všechny hooky a uvedeme některé případy použití.
 
 <!--more-->
 
-## Overview
+## Přehled
 
-| Hook | Description |
+| Hook | Popis |
 |---|---|
 | `head-end` | Before the `<head>` end |
 | `body-end` | Before the `<body>` end |
@@ -46,13 +46,12 @@ In this article, we will introduce all hooks and provide some use cases.
 | `post-panel-begin` | At very top of the post panel |
 | `post-panel-end` | Before the post panel end |
 
-## Usages
+## Užití
+Je snadné použít hook, co musíte udělat, je vytvořit HTML soubor se stejným názvem jako hook v adresáři `layouts/partials/hooks`.
 
-It's easy to use a hook, what you need to do is that create an HTML file with the same name as hook in the `layouts/partials/hooks` directory.
+Vezměme si jako příklad `sidebar-begin`:
 
-Let's take `sidebar-begin` as an example:
-
-```shell
-echo '<section class="row card component text-center"><div class="card-body">SIDEBAR BEGIN</div></section>' \
-  > layouts/partials/hooks/sidebar-begin.html
+``` shell
+echo '<section class="row card component text-center"><div class="card-body">ZAČÁTEK BOČNÍ LIŠTY</div></section>' \
+   > layouts/partials/hooks/sidebar-begin.html
 ```

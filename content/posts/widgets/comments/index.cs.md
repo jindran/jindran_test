@@ -1,5 +1,5 @@
 +++
-title = "Comments Widget"
+title = "Widget pro komentáře"
 date = 2021-11-27T19:54:29+08:00
 featured = true
 comment = true
@@ -23,59 +23,59 @@ images = []
   pre = '<i class="fas fa-fw fa-comments"></i>'
 +++
 
-[Disqus](https://disqus.com/) and [Utterances](https://utteranc.es/) comments widgets are supported out of box.
-This article shows how to configure them and even customize your own comment widgets.
+Widgety pro komentáře [Disqus](https://disqus.com/) a [Utterances](https://utteranc.es/) jsou podporovány již po instalaci.
+Tento článek ukazuje, jak je nakonfigurovat a dokonce přizpůsobit své vlastní widgety pro komentáře.
 
 <!--more-->
 
 ## Disqus
 
-[Disqus](https://disqus.com/) comments widget is supported by Hugo.
+[Disqus](https://disqus.com/) widget pro koment85e je podporov8n v Hugo.
 
 ```toml
 disqusShortname = "yourdiscussshortname"
 ```
 
-> Please keep in mind that `disqusShortname` is a site's configuration, **not** a parameter. Put it in the `params` won't work.
+> Mějte prosím na paměti, že `disqusShortname` je konfigurace webu, **není** parametr. Vložení do `params` nebude fungovat.
 
-## Utterances
+## Promluvy
 
-[Utterances](https://utteranc.es/) is a lightweight comments widget built on GitHub issues.
+[Utterances](https://utteranc.es/) je jednoduchý widget pro komentáře vytvořený na základě problémů GitHubu.
 
 ```toml
 [utterances]
-  repo = "user/repo"
-  #issueTerm = "pathname" # pathname, url, title, og:title.
-  #label = "comment" # Optional.
+  repo = "uživatel/repo"
+  #issueTerm = "název cesty" # název cesty, url, název, og:název.
+  #label = "komentář" # Volitelné.
   #theme = ""
 ```
 
-> Unlike Disqus, Utterances **is** a parameter. You should put it in the `params`.
+> Na rozdíl od Disqus je Utterances **** parametr. Měli byste to zadat do "params".
 
-### Parameters
+### Parametry
 
-| Name | Type | Default | Description |
+| Jméno | Typ | Výchozí | Popis |
 |:---|:---|:---|:---
-| `utterances.repo` | String | - | GitHub repository.
-| `utterances.issueTerm` | String | `pathname` | The mapping between blog posts and GitHub issues: `pathname` | `pathname`, `url`, `title` and `og:title`.
-| `utterances.label` | String | - | The label that will be assigned to issues created by Utterances.
-| `utterances.theme` | String | - | `github-light` and `github-dark` will be used in light and dark mode respectively if not set. Optional values: `github-light`, `github-dark`, `preferred-color-scheme`, `github-dark-orange`, `icy-dark`, `dark-blue` and `photon-dark`.
+| `utterances.repo` | Řetězec | - | úložiště GitHub.
+| `utterances.issueTerm` | Řetězec | `cesta` | Mapování mezi blogovými příspěvky a problémy GitHub: `pathname` | `pathname`, `url`, `title` a `og:title`.
+| `utterances.label` | Řetězec | - | Štítek, který bude přiřazen problémům vytvořeným pomocí Utterances.
+| `utterances.theme` | Řetězec | - | `github-light` a `github-dark` budou použity ve světlém a tmavém režimu, pokud nejsou nastaveny. Volitelné hodnoty: `github-light`, `github-dark`, `preferred-color-scheme`, `github-dark-orange`, `icy-dark`, `dark-blue` a `photon-dark`.
 
-### Troubleshooting
+### Odstraňování problémů
 
-- Make sure the repo is public, otherwise your readers will not be able to view the issues/comments.
-- Make sure the [utterances app](https://github.com/apps/utterances) is installed on the repo, otherwise users will not be able to post comments.
-- If your repo is a fork, navigate to its settings tab and confirm the issues feature is turned on.
+- Ujistěte se, že repo je veřejné, jinak vaši čtenáři nebudou moci zobrazit problémy/komentáře.
+- Ujistěte se, že je v úložišti nainstalována aplikace [utterances](https://github.com/apps/utterances), jinak uživatelé nebudou moci přidávat komentáře.
+- Pokud je vaše repo fork, přejděte na jeho kartu nastavení a potvrďte, že je zapnutá funkce problémů.
 
-## Custom Comments Widget
+## Widget pro vlastní komentáře
 
-We don't intend to support all comments widgets, but don't worry, you can customize your own comments widget.
+Nemáme v úmyslu podporovat všechny widgety pro komentáře, ale nebojte se, svůj vlastní widget pro komentáře si můžete přizpůsobit.
 
-> You will need to disable the others before creating your own comments widget.
+> Před vytvořením vlastního widgetu pro komentáře budete muset deaktivovat ostatní.
 
-```shell
+``` shell
 mkdir -p layouts/partials/post/comments
-echo "MY COMMENTS WIDGET" > layouts/partials/post/comments/custom.html
+echo "WIDGET MOJE KOMENTÁŘE" > layouts/partials/post/comments/custom.html
 ```
 
-In the meantime, you may need to introduce third-party assets, which can be solved by [customizing assets]({{< ref "/posts/custom-assets" >}}) or [Hooks]({{< ref "/posts/hooks" >}}) easily.
+Mezitím možná budete muset zavést aktiva třetích stran, což lze vyřešit [přizpůsobením aktiv]({{< ref "/posts/custom-assets" >}}) nebo [Hooks]({{< ref " /posts/hooks" >}}) snadno.

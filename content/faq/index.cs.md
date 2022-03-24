@@ -1,5 +1,5 @@
 +++
-title = "FAQs"
+title = "Časté dotazy"
 description = "Časté dotazy"
 layout = "faq"
 [menu.main]

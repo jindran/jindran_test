@@ -16,19 +16,19 @@ series = [
 images = []
 +++
 
-The `social` parameter is a set of key value pairs of social links that mapping from platform to their user identifier.
-It supports many popular social platforms, such as Twitter, Facebook, Reddit, GitHub.
-This article lists all supported platforms and how to use them.
+Parametr `social` je sada párů klíčových hodnot sociálních odkazů, které mapují z platformy na jejich identifikátor uživatele.
+Podporuje mnoho populárních sociálních platforem, jako je Twitter, Facebook, Reddit, GitHub.
+V tomto článku jsou uvedeny všechny podporované platformy a jak je používat.
 
 <!--more-->
 
-## Usage
+## Pou6it9
 
-There are two place you can put social links to, one is the [Author Widget]({{< ref "/posts/widgets/author" >}}), the other is the footer.
+Existují dvě místa, kam můžete umístit odkazy na sociální sítě, jedno je [Author Widget]({{< ref "/posts/widgets/author" >}}), druhé je zápatí.
 
-### Author Widget
+### Widget autora
 
-Set up social links by editing a file `config/_default/author.toml` with the following content:
+Odkazy na sociální sítě nastavte úpravou souboru `config/_default/author.toml` s následujícím obsahem:
 
 ```toml
 [social]
@@ -36,20 +36,20 @@ Set up social links by editing a file `config/_default/author.toml` with the fol
   github = "githubusername"
 ```
 
-### Footer
+### Zápatí
 
-Set up social links by creating a file `config/_default/social.toml` with the following content:
+Odkazy na sociální sítě nastavte vytvořením souboru `config/_default/social.toml` s následujícím obsahem:
 
 ```toml
 email = "user@domain.tld"
 github = "githubusername"
 ```
 
-## Platforms
+## Platformy
 
 | Platform | User Identifier |
 |---|---|
-| `email` | Email Address |
+| `email` | Emailová adresa |
 | `facebook` | Facebook Username |
 | `facebookgroup` | Facebook Group Name |
 | `github` | GitHub Username |

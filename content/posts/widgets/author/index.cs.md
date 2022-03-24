@@ -1,5 +1,5 @@
 +++
-title = "Author Widget"
+title = "Widget autora"
 date = 2021-12-03T11:10:19+08:00
 featured = false
 comment = true
@@ -16,24 +16,24 @@ series = [
 images = []
 +++
 
-The author widget is located in the sidebar, in order to introduce yourself briefly.
+Widget pro autora se nachází v postranním panelu, abyste se krátce představili.
 
 <!--more-->
 
-## Site Configuration
+## Konfigurace webu
 
-The configuration file is located in `config/_default/author.toml` by default.
-You can turn it off by removing the `author` configuration.
+Konfigurační soubor je standardně umístěn v `config/_default/author.toml`.
+Můžete jej vypnout odstraněním konfigurace `autor`.
 
-| Name | Type | Default | Description
+| Jméno | Typ | Výchozí | Popis
 |---|:-:|:-:|---
-| `author` | Object | - | Author profile shown in sidebar.
-| `author.name` | String | - | Name.
-| `author.avatar` | String | `images/profile.webp` | Avatar.
-| `author.bio` | String | - | Bio.
-| `author.company` | String | - | Company.
-| `author.location` | String | - | Location.
-| `author.about` | String | - | The external about page. The internal about page will be used if not set.
-| `author.params` | Object | - |
-| `author.params.layout` | String | - | Optional values: `compact`.
-| `author.social` | Object | - | [Social Links]({{< ref "/posts/widgets/social-links" >}}).
+| `author` | Objekt | - | Profil autora zobrazený na postranním panelu.
+| `autor.name` | Řetězec | - | Název.
+| `autor.avatar` | Řetězec | `images/profile.webp` | Avatar.
+| `autor.bio` | Řetězec | - | Bio.
+| `autor.company` | Řetězec | - | Společnost.
+| `autor.location` | Řetězec | - | Umístění.
+| `autor.o` | Řetězec | - | Externí o stránce. Není-li nastavena, použije se interní stránka informací.
+| `autor.params` | Objekt | - |
+| `author.params.layout` | Řetězec | - | Nepovinné hodnoty: `kompaktní`.
+| `autor.social` | Objekt | - | [Sociální odkazy]({{< ref "/posts/widgets/social-links" >}}).
